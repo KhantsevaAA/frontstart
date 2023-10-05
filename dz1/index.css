@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Inter&display=swap");
+a {
+  text-decoration: none;
+  color: #fff;
+}
+* {
+  font-family: "Comfortaa";
+}
+.body {
+  display: flex;
+  background-color: #6a6487;
+}
+/* header start */
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /*перенос контента, когда строка заканчивается*/
+  align-items: flex-end; /*выравнивание внутри блока у конца поперечной оси*/
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: #121026;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+.logo {
+  max-width: 100px;
+  border-radius: 20%;
+  margin: 20px;
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Comfortaa";
+  list-style-type: none;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+}
+.nav-item {
+  margin-right: 60px;
+  line-height: 80px;
+}
+/* header end */
+
+/* start main */
+main {
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: wrap; /*перенос контента, когда строка заканчивается*/
+  align-items: flex-end; /*выравнивание внутри блока у конца поперечной оси*/
+  justify-content: space-between;
+  background-color: #6a6487;
+}
+
+.photo {
+  margin: 20px 20px;
+  min-width: 300px;
+  border-radius: 20px;
+}
+
+p {
+  /* white-space: pre; */
+  
+}
+.prof {
+}
+.dz {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 800px;
+  background-color: #72517A;
+}
+
+/* footer start */
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /*перенос контента, когда строка заканчивается*/
+  align-items: flex-end; /*выравнивание внутри блока у конца поперечной оси*/
+  justify-content: space-between;
+  background-color: #121026;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 55px; */
+  font-family: "Comfortaa";
+  list-style-type: none;
+  color: #fff;
+  font-size: 20px;
+
+  margin: auto;
+}
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+  background-color: #261f40;
+  padding: 10px;
+  border-radius: 20px;
+  /* flex-basis: 80px; */
+  flex: 1 0 0;
+  justify-content: center;
+  align-items: center;
+}
+.footer-contact-logo {
+  padding: px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin: auto;
+}
