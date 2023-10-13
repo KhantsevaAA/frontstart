@@ -47,9 +47,9 @@ header {
 main {
   display: flex;
   flex: 1 0 auto;
-  flex-wrap: wrap; /*перенос контента, когда строка заканчивается*/
-  align-items: flex-end; /*выравнивание внутри блока у конца поперечной оси*/
-  justify-content: space-between;
+  flex-wrap: wrap; /*перенос контента, когда строка заканчивается */
+  /* align-items: flex-end; выравнивание внутри блока у конца поперечной оси
+  justify-content: space-between; */
   background-color: #6a6487;
 }
 
@@ -58,21 +58,34 @@ main {
   min-width: 300px;
   border-radius: 20px;
 }
-
 p {
   /* white-space: pre; */
   
 }
 .prof {
-}
-.dz {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  width: 800px;
-  background-color: #72517A;
-}
 
+}
+.dzs {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+
+  /* flex-wrap: wrap; */
+  background-color: #72517A;
+  
+}
+.dz{
+/*   
+  display: flex;
+  flex-wrap: wrap; */
+  list-style-type: none;
+  max-width: 30%;
+  
+  background-color: #806091;
+  border-radius: 20px;
+  padding: 10px;
+}
+  
 /* footer start */
 footer {
   width: 100%;
@@ -82,8 +95,8 @@ footer {
   justify-content: space-between;
   background-color: #121026;
   margin: 0 auto;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
 }
 .footer-contacts {
   display: flex;
@@ -97,6 +110,8 @@ footer {
   font-size: 20px;
 
   margin: auto;
+  align-items: center;
+
 }
 .footer-contact {
   display: flex;
@@ -109,7 +124,7 @@ footer {
   /* flex-basis: 80px; */
   flex: 1 0 0;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .footer-contact-logo {
   padding: px;
